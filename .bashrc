@@ -128,8 +128,10 @@ alias books="cd ~/Desktop/books"
 alias gen="cd ~/Desktop/books/programming/general-programming"
 
 #Easy nav to website
-alias rhett="cd ~/rhettapplestone.com"
+alias rhett="cd ~/Desktop/rhettapplestone.com"
 
+#easy to nav and edit todo list and push to github
+alias list="wdir=$(pwd) && cd ~/Desktop/rhettapplestone.com && micro list && qcom && cd $wdir"
 
 #Easy way to exit this file
 alias rc="micro ~/.bashrc +120:1 && source ~/.bashrc"
@@ -140,4 +142,9 @@ alias find="find . -iname"
 # When you mistype ls
 alias sl="ls"
 
+#clear but shorter
+alias c="clear"
 
+#open the micro or nvim text editor
+alias m="micro"
+alias v="nvim"
